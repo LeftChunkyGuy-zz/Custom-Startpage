@@ -1,0 +1,86 @@
+body{
+	background-color: gray;
+	background-image: url('startpage_background.jpg');
+	margin: 0;
+	font-family: "Courier New", Courier, monospace;
+}
+
+
+
+.bookmarknav {
+	overflow: hidden;
+	padding: 20px 26px;
+}
+
+.bookmarknav a{
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.bookmarknav a:hover {
+	color: gray;
+}
+
+.bookmarknav s{
+	padding: 0px 3px;
+	float: left;
+	display: block;
+	color: #909090;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	text-shadow:
+	1px 1px 0 #000,
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
+
+
+.searchbox {
+	overflow: hidden;
+	text-align: center;
+	padding: 400px 0;
+}
+
+.searchbox a{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow:
+	3px 3px 0 #000,
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
+
+.searchbox input[type=text]{
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	font-family: "Courier New", Courier, monospace;
+	border: none;
+}
+
+
+
+h1 {
+	color: white;
+	padding: 440px 0;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow:
+	3px 3px 0 #000,
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
