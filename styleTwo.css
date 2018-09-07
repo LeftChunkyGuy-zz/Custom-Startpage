@@ -1,0 +1,123 @@
+body{
+	background: url('background2.jpg');
+	margin: 0;
+	font-family: "Courier New", Courier, monospace;
+	background-size: 1920px 1000px;
+	overflow: hidden;
+}
+/* Start themeselect class code*/
+.themeselect {
+	font-family: "Courier New", Courier, monospace;
+	overflow: hidden;
+	float: left;
+	display: block;
+	color: gray;
+	text-align: center;
+	text-decoration: none;
+	font-size: 10px;
+	padding: 825px 0px;
+}
+
+.themeselect a {
+	font-size: 11px;
+}
+/*End themeselect class code*/
+
+/* Start navbar class code */
+/* navbar is the space that holds the information on the bookmark bar present on the homepage */
+.navbar {
+	overflow: hidden;
+	padding: 20px 26px;
+}
+
+.navbar a{
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.navbar a:hover {
+	color: #B56DEE;
+}
+
+.navbar s{
+	padding: 0px 3px;
+	float: left;
+	display: block;
+	color: purple;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	text-shadow:
+	1px 1px 0 #000,
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
+/* End navbar class code */
+
+/* Start searchbox class code */
+/* The searchbox class handles the google search box in the middle of the homepage */
+.searchbox {
+	overflow: hidden;
+	text-align: center;
+	padding: 400px 0;
+}
+
+.searchbox a{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow:
+	3px 3px 0 #000,
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
+
+.searchbox input[type=text]{
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	font-family: "Courier New", Courier, monospace;
+	border: none;
+}
+
+.searchbox h1 {
+	color: white;
+	padding: 440px 0;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow:
+	3px 3px 0 #000,
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
+
+.rightcolumn {
+	float: right;
+	width: 3%;
+}
+
+.maincolumn {
+	float right;
+    width: 97%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* End searchbox class code */
+
