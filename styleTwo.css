@@ -9,22 +9,19 @@ body{
 .themeselect {
 	font-family: "Courier New", Courier, monospace;
 	overflow: hidden;
-	float: left;
 	display: block;
-	color: gray;
+	color: black;
 	text-align: center;
 	text-decoration: none;
-	font-size: 10px;
-	padding: 825px 0px;
+	font-size: 9px;
+	padding: 650px 75px;
 }
 
 .themeselect a {
-	font-size: 11px;
+	font-size: 10px;
 }
-/*End themeselect class code*/
 
-/* Start navbar class code */
-/* navbar is the space that holds the information on the bookmark bar present on the homepage */
+/* Start navbar class style */
 .navbar {
 	overflow: hidden;
 	padding: 20px 26px;
@@ -58,14 +55,12 @@ body{
 	-1px 1px 0 #000,
 	1px 1px 0 #000;
 }
-/* End navbar class code */
 
-/* Start searchbox class code */
-/* The searchbox class handles the google search box in the middle of the homepage */
+/* Start searchbox class style*/
 .searchbox {
 	overflow: hidden;
 	text-align: center;
-	padding: 400px 0;
+	padding: 300px 50px;
 }
 
 .searchbox a{
@@ -102,22 +97,42 @@ body{
 	-1px 1px 0 #000,
 	1px 1px 0 #000;
 }
-
+.gym {
+	height: 180px;
+	width: 180px;
+	outline: 2px dotted #B56DEE;
+}
+/* Right Column Style */
 .rightcolumn {
-	float: right;
-	width: 3%;
+	float: left;
+	width: 10%;
 }
-
+.rightcolumn a{
+	font-size: 18px;
+	font-weight: 900;
+}
+.rightcolumn b{
+	font-size: 14px;
+}
+/* Left Column Style */
+.leftcolumn{
+	float: left;
+	width: 10%;
+}
+/*Middle Column Style*/
 .maincolumn {
-	float right;
-    width: 97%;
+	float: left;
+	width: 80%;
 }
-
+/* Misc*/
+mark{
+	background-color: #B56DEE;
+	color: black;
+}
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
-/* End searchbox class code */
 

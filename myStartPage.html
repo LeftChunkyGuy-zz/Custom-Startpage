@@ -36,8 +36,44 @@
 	
 	<div class="row"> <!-- Start row class -->
 
-		<!-- Block of Code that will handle the themeslect class -->
-		<div class="rightcolumn">
+		<div class="leftcolumn"> <!-- Start left column -->
+			<p></p>
+		</div> <!-- End left column-->
+
+		<div class="maincolumn"> <!-- Start middle column -->
+			<div class="searchbox"><!--Start searchbox class-->
+				<a>Welcome back, LeftChunkyGuy</a>
+				<!-- Actual google search box code -->
+				<form method="get" action="http://www.google.com/search">
+					<input type="text"   name="q" size="25" style="color:#808080;" maxlength="255" value="" 
+					onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
+
+				</form>
+				<!-- End google search box code -->
+			</div><!--End searchbox class -->
+		</div> <!--End middle column-->
+
+		<div class="rightcolumn"> <!-- Start right column -->
+			<div id="gym" class="gym"> <!-- Start gym class -->
+				<a>Gym Schedule:</a><br>
+				<b id="mon">&#9634; Monday: Chest</b><br>
+				<b id="tues">&#9634; Tuesday: Legs</b><br>
+				<b id="wed">&#9634; Wednesday: Arms</b><br>
+				<b id="thur">&#9634; Thursday: Shoulders</b><br>
+				<b id="fri">&#9634; Friday: Back</b><br>
+				<b id="sat">&#9634; Saturday: Rest</b><br>
+				<b id="sun">&#9634; Sunday: Rest</b><br>
+				<script type="text/javascript">
+					var day = new Date(); //get todays date
+					var num = day.getDay(); //Get a numeric value (1-7) for which day of the week it is
+					var d = ""; //empty string variable
+					var days = ["mon", "tues", "wed", "thur", "fri", "sat", "sun"]; //array of all <a> ids in the gym class
+					var x = document.getElementById(days[num-1]).textContent; //Grabs the textContent of whichever id tag is pulled from the array, determined by the numeric date value
+					var y = "<mark>"+x+"</mark>"; //add mark tabs
+					document.getElementById(days[num-1]).innerHTML = y; //reset the value between the <a> tags for the id being altered.
+				</script>
+			</div> <!-- End gym class -->
+			<!-- Will come back to this later 
 			<div class ="themeselect">
 				<a>Themes:</a>
 				<form action="javascript:;">
@@ -46,26 +82,11 @@
 				</form>
 			</div>
 		</div>
+	-->
 
-
-		<!-- End Block of code for themeselect class -->
-
-		<!-- Block of code for searchbox class -->
-		<div class="maincolumn">
-			<div class="searchbox">
-				<a>Welcome back, LeftChunkyGuy</a>
-				<!-- Actual google search box code -->
-				<form method="get" action="http://www.google.com/search">
-					<input type="text"   name="q" size="25" style="color:#808080;" maxlength="255" value="Google . . ." 
-					onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
-
-				</form>
-				<!-- End google search box code -->
-			</div>
-		</div>
-		<!-- End Block of code for searchbox class-->	
-
-	</div> <!-- End row class here -->
+	<!-- End Block of code for themeselect class -->
+</div> <!-- End right column -->
+</div> <!-- End row class here -->
 
 </body>
 </html>
